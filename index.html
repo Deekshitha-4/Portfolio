@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deekshitha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(3, 37, 101);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(29, 45, 75) ;
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{
+      text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+      color: rgb(163, 230, 30);
+      font-size: 1.05rem;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+       
+        margin:50px 0;
+      }
+      .firstsection >div{
+       
+        width: 30%;
+ 
+      }
+      .leftsection{
+       margin: 100px;
+        font-size: 2.5rem;
+      }
+      .leftsection .buttons{
+       padding: 23px;
+      }
+      .leftsection .btn{
+       padding: 10px;
+       background-color:rgb(3, 37, 101);
+       color:white;
+       border:2px solid white;
+       border:radius 2.5px;
+       font: size 2rem;
+       cursor:pointer;
+      }
+      .rightsection img{
+       width: 90%;
+       margin: 10px;
+       margin-left: 2px;
+       
+       }
+       .cute{
+        color: rgb(163, 230, 30);
+       }
+       #element{
+        color: rgb(163, 230, 30);
+       }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><b>Deekshitha's  Portfolio</b></div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Skills</a></li>
+                <li><a href="/">Contact me</a></li>
+                
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hey! Myself <span class="cute">Deekshitha</span>
+          <div>
+            I am an entusiastic </div> 
+            <span id="element"></span>
+            <div class="buttons">
+               <button class="btn">Download Resume</button>
+               <button class="btn">LinkedIn Profile</button>
+            </div>
+        </div>
+       
+        <div class="rightsection">
+          <img src="wd.png.png" alt="">
+        </div>
+        
+      </section>
+      
+
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer','Competetive Programmer','video editor','Graphic Designer'],
+          typeSpeed: 50,
+        });
+      </script>
+  </body>
+</html>
